@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+      <div class="part1">
+          <h2>Little</h2>
+        <h3>Cal</h3>
+      </div>
+      <div class="part2">
+        <div class="all">
+            <div class="duo">
+                <input type="text" id="firstdigit">
+                <input type="text" id="seconddigit">
+            </div>
+            <div class="twin">
+                <div class="one">
+                    <button onclick="add()">+</button>
+                    <button onclick="multiply()">*</button>
+                    <button onclick="divide()">/</button>
+                    <button onclick="minus()">-</button>
+                    <button onclick="modulus()">%</button>
+                    <button onclick="power()">**</button>
+                </div>
+                <div id="answer">
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+     
+    </main>
+    
+</body>
+</html>
+
+<script>
+     let first = document.getElementById("firstdigit");
+    let second =  document.getElementById("seconddigit");
+     let answer =  document.getElementById("answer");
+function add() {
+    let a = Number(first.value)
+     let b = Number(second.value)
+     answer.innerHTML = a + b
+}
+function multiply() {
+    let a = Number(first.value)
+     let b = Number(second.value)
+     answer.innerHTML = a * b
+}
+function divide() {
+    let a = Number(first.value)
+     let b = Number(second.value)
+     answer.innerHTML = a / b
+}
+function minus() {
+    let a = Number(first.value)
+     let b = Number(second.value)
+     answer.innerHTML = a - b
+}
+function modulus() {
+    let a = Number(first.value)
+     let b = Number(second.value)
+     answer.innerHTML = a + b
+}
+function power() {
+    let a = Number(first.value)
+     let b = Number(second.value)
+     answer.innerHTML = a ^ b
+}
+</script>
+ 
